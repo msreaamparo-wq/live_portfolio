@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070706">
+<meta name="color-scheme" content="dark">
+<title>Rea Amparo — Developer Portfolio</title>
+<meta name="description" content="Rea Amparo — Computer Science student, developer and creative technologist. Mobile and web applications, intelligent systems and technology-driven experiences.">
+<meta property="og:title" content="Rea Amparo — Developer Portfolio">
+<meta property="og:description" content="Computer Science student, developer and creative technologist.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;900&family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+/* Adds the intro flag before first paint so portfolio content never flashes ahead of the intro. */
+(function(){var d=document.documentElement;try{var r=matchMedia('(prefers-reduced-motion: reduce)').matches,h=location.hash.length>1&&location.hash!=='#top',p=sessionStorage.getItem('rea.replay');
+if(p||(!r&&!h&&!/[?&]nointro/.test(location.search)))d.classList.add('intro-on');}catch(e){}})();
+</script>
+<noscript><style>.intro,#stage,.cursor,.grain{display:none!important}html.intro-on{overflow:auto}</style></noscript>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<canvas id="stage" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="spotlight" aria-hidden="true"></div>
+
+<!-- ───────────── SCENE 01 · THE TELEVISION ROOM (interactive intro) ───────────── -->
+<section id="intro" class="intro" aria-label="Interactive introduction: a wall of televisions, each one a project">
+  <div class="hud hud-top">
+    <span class="hud-name mono">REA AMPARO</span>
+    <span class="hud-rec mono" aria-hidden="true"><i></i> REC · INTERACTIVE</span>
+    <button id="skipIntro" class="btn-ghost" data-ui type="button">Skip intro <kbd>Esc</kbd></button>
+  </div>
+  <div class="hud hud-bottom">
+    <p class="hint mono" id="introHint"><span class="hint-dot" aria-hidden="true"></span>Explore the screens</p>
+    <button id="enterBtn" class="enter" data-ui type="button" data-cursor="Go"><span>Enter experience</span><i aria-hidden="true"></i></button>
+    <ul id="tvIndex" class="tv-index" aria-label="Screens. Tab or arrow keys to choose one, Enter to open it."></ul>
+  </div>
+  <div id="tvLabel" class="tv-label" aria-hidden="true"><b class="tv-title"></b><span class="tv-meta mono"></span><em class="tv-hint mono"></em></div>
+  <div id="tvLive" class="sr-only" aria-live="polite"></div>
+  <p id="subtitle" class="subtitle" aria-hidden="true"></p>
+</section>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#top">rea<i>.</i>amparo</a>
+    <nav aria-label="Main">
+      <a href="#top">Home</a><a href="#work">Projects</a><a href="#about">About</a><a href="#toolkit">Toolkit</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="pill" href="https://github.com/msreaamparo-wq" target="_blank" rel="noopener noreferrer" data-magnet>GitHub ↗</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ───────────── SCENE 03 · HERO ───────────── -->
+<section class="hero" id="top" aria-labelledby="heroTitle">
+  <p class="kicker mono">Portfolio — 2026 · Philippines</p>
+  <h1 class="mega" id="heroTitle" aria-label="Rea Amparo"><span class="line l1" aria-hidden="true">REA</span><span class="line l2" aria-hidden="true">AMPARO</span></h1>
+  <div class="hero-rule" aria-hidden="true"></div>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <ul class="roles" aria-label="Roles"><li><span>Computer Science Student</span></li><li><span>Developer</span></li><li><span>Creative Technologist</span></li></ul>
+      <p class="lead">I build mobile and web applications, explore intelligent systems, and create technology-driven experiences that solve real problems.</p>
+      <div class="actions"><a class="cta" href="#work" data-magnet><span>See the projects</span><b aria-hidden="true">→</b></a><a class="link" href="https://github.com/msreaamparo-wq" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+      <dl class="nums"><div><dt>Projects</dt><dd>5</dd></div><div><dt>Languages</dt><dd>11</dd></div><div><dt>Public repositories</dt><dd data-gh-count>6</dd></div></dl>
+    </div>
+    <figure class="portrait"><img src="assets/rea.jpg" width="560" height="700" alt="Portrait of Rea Amparo"><figcaption class="mono"><span>Rea Amparo</span><span>Based in the Philippines</span></figcaption></figure>
+  </div>
+  <a class="scroll-cue mono" href="#work" aria-label="Scroll to projects">Scroll <i aria-hidden="true"></i></a>
+</section>
+
+<div class="strip" aria-hidden="true"><div class="strip-in"><span>Mobile</span><i>✦</i><span>Web</span><i>✦</i><span>Backend</span><i>✦</i><span>Computer vision</span><i>✦</i><span>Mobile</span><i>✦</i><span>Web</span><i>✦</i><span>Backend</span><i>✦</i><span>Computer vision</span><i>✦</i><span>Mobile</span><i>✦</i><span>Web</span><i>✦</i><span>Backend</span><i>✦</i><span>Computer vision</span><i>✦</i></div></div>
+
+<!-- ───────────── PROJECTS ───────────── -->
+<section id="work" class="work" aria-labelledby="workTitle">
+  <div class="wrap head">
+    <span class="eyebrow mono" data-reveal>Selected work · 05</span>
+    <h2 class="display" id="workTitle">Five screens. Five worlds.</h2>
+    <p data-reveal>Each project keeps one visual identity from the television wall to its case study. The artwork is illustrative; status labels and links are the real ones.</p>
+  </div>
+  <div class="rail-bar wrap"><span class="mono" id="railCount">01 / 05</span><span class="rail-hint mono">Drag, scroll sideways or use ← →</span>
+    <span class="rail-btns"><button type="button" id="railPrev" aria-label="Previous project" data-magnet>←</button><button type="button" id="railNext" aria-label="Next project" data-magnet>→</button></span></div>
+  <div class="rail" id="rail" tabindex="0" role="region" aria-label="Projects. Scroll horizontally or use the arrow keys."></div>
+  <noscript><ul class="wrap"><li><a href="https://github.com/msreaamparo-wq/TRACE-SSG-Attendance-System">TRACE — Flutter, Dart, Firebase (prototype)</a></li><li><a href="https://github.com/msreaamparo-wq">Cacao Vision — Python, PyTorch, TensorFlow Lite (in progress)</a></li><li><a href="https://github.com/msreaamparo-wq/Gender-Neutral-Language-Recognizer">Gender-Neutral Language Recognizer — Python, Flask</a></li><li><a href="https://github.com/msreaamparo-wq/it-s-a-love-story-baby">Our Little Archive — Flutter, Supabase, OpenStreetMap</a></li><li><a href="https://github.com/msreaamparo-wq/void-experience">Void Experience — HTML, CSS, JavaScript</a></li></ul></noscript>
+</section>
+
+<!-- ───────────── ABOUT ───────────── -->
+<section id="about" class="about" aria-labelledby="aboutTitle">
+  <div class="float-tech" aria-hidden="true"><span style="--x:6%;--y:8%">Flutter</span><span style="--x:82%;--y:14%">Python</span><span style="--x:70%;--y:46%">PyTorch</span><span style="--x:4%;--y:58%">Firebase</span><span style="--x:88%;--y:78%">Flask</span><span style="--x:30%;--y:92%">Dart</span></div>
+  <div class="wrap">
+    <span class="eyebrow mono" data-reveal>About</span>
+    <h2 class="display" id="aboutTitle">Curiosity first.</h2>
+    <p class="statement">I care about the full picture: how an interface feels, how the system works underneath, and what happens when someone uses it.</p>
+    <div class="about-cols">
+      <p data-reveal>I’m a Computer Science student working across mobile and web development, backend integration and computer-vision research. I test ideas, improve the small details, and keep my repositories honest about what is finished and what is still in progress.</p>
+      <p data-reveal>Security belongs in the build, not just at the end. I’m drawn to defensive thinking, safe and authorized experimentation, and documentation that explains both the issue and the fix.</p>
+    </div>
+    <div class="story">
+      <span class="tl-line" aria-hidden="true"><i class="tl-fill"></i></span>
+      <ol class="timeline" id="timeline" aria-label="Development story"></ol>
+      <div class="chapter" id="chapterView" aria-live="polite">
+        <div class="chapter-frame"><canvas id="chapterCanvas" width="800" height="600" aria-hidden="true"></canvas></div>
+        <p class="mono" id="chapterKey"></p><h3 id="chapterTitle"></h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── TOOLKIT ───────────── -->
+<section id="toolkit" class="toolkit" aria-labelledby="toolkitTitle">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow mono" data-reveal>Toolkit</span><h2 class="display" id="toolkitTitle">Tools for the next question.</h2><p data-reveal>The technologies I use across coursework, projects and research. The list changes as I learn. Hover a name to find it in the constellation.</p></div>
+    <div class="constel-wrap"><canvas id="constellation" aria-hidden="true"></canvas></div>
+    <div class="tk-groups" id="toolkitGroups"></div>
+    <ol class="steps" aria-label="How I work"><li data-reveal><small class="mono">01</small><h4>Understand</h4><p>Define the problem and what success looks like.</p></li><li data-reveal><small class="mono">02</small><h4>Plan</h4><p>Break it into parts and pick tools for a reason.</p></li><li data-reveal><small class="mono">03</small><h4>Build</h4><p>Write readable code, one focused feature at a time.</p></li><li data-reveal><small class="mono">04</small><h4>Test</h4><p>Check edge cases, learn from issues, improve.</p></li></ol>
+    <div class="gh"><h3 class="mono">Live from GitHub</h3><ul id="ghList" class="gh-list"><li class="muted">Loading repositories…</li></ul><p class="muted mono" id="ghNote"></p></div>
+  </div>
+</section>
+
+<!-- ───────────── CONTACT ───────────── -->
+<section id="contact" class="contact" aria-labelledby="contactTitle">
+  <div class="wrap">
+    <h2 class="mega-contact" id="contactTitle" aria-label="Good work starts with a question."><span class="line" aria-hidden="true">GOOD WORK</span><span class="line" aria-hidden="true">STARTS WITH</span><span class="line amber" aria-hidden="true">A QUESTION.</span></h2>
+    <p class="contact-copy" data-reveal>Have a project idea, a useful resource or a different way to solve a problem? I’m glad to connect, learn and trade ideas. GitHub is where I’m most active.</p>
+    <div class="contact-links" id="contactLinks">
+      <a class="big-link" href="https://github.com/msreaamparo-wq" target="_blank" rel="noopener noreferrer" data-cursor="Open"><span>GitHub</span><b>github.com/msreaamparo-wq ↗</b></a>
+      <!-- Email is added automatically when REA.config.email is set in js/config.js -->
+    </div>
+    <footer class="foot"><span class="mono">© 2026 Rea Amparo</span>
+      <nav aria-label="Footer"><a href="#top">Home</a><a href="#work">Projects</a><a href="#about">About</a><a href="#toolkit">Toolkit</a><a href="#contact">Contact</a><button type="button" id="replay" class="linkbtn">Replay intro ↺</button></nav>
+      <span class="mono dim">Built with Three.js &amp; GSAP</span></footer>
+  </div>
+</section>
+</main>
+
+<!-- ───────────── CASE STUDY OVERLAY ───────────── -->
+<div id="case" class="case" role="dialog" aria-modal="true" aria-labelledby="caseTitle" hidden><div class="case-inner"></div></div>
+
+<div class="cursor" aria-hidden="true"><i></i><span class="cursor-label mono"></span></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer crossorigin="anonymous"></script>
+<script src="js/photo.js" defer></script>
+<script src="js/config.js" defer></script>
+<script src="js/utils.js" defer></script>
+<script src="js/art.js" defer></script>
+<script src="js/github.js" defer></script>
+<script src="js/effects.js" defer></script>
+<script src="js/scene.js" defer></script>
+<script src="js/camera.js" defer></script>
+<script src="js/tv.js" defer></script>
+<script src="js/journey.js" defer></script>
+<script src="js/portfolio.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
