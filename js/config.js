@@ -5,8 +5,6 @@ REA.config = {
   github: 'https://github.com/msreaamparo-wq',
   githubProfileUrl: 'https://github.com/msreaamparo-wq',
   githubUser: 'msreaamparo-wq',
-  /* No email address exists in the original project. Add yours here, e.g. 'you@example.com'.
-     While empty, the email link is hidden instead of showing a fake address. */
   email: '',
   fallbackRepoCount: 6
 };
@@ -16,7 +14,7 @@ REA.projects = [
     id: 'trace', index: '01', title: 'TRACE', status: 'Prototype', statusKind: 'Status',
     short: 'Attendance, recorded properly.',
     desc: 'Tracking and recording attendance system with event management, QR-based attendance, role-based access, and location verification.',
-    tech: ['Flutter', 'Dart', 'Firebase', 'Provider', 'Cloud Firestore', 'QR scanning', 'Geolocation', 'Hive', 'PDF / Excel reports'],
+    tech: ['Flutter', 'Dart', 'Firebase', 'Firebase Authentication', 'Cloud Firestore', 'Firebase Storage', 'Provider', 'Hive', 'mobile_scanner', 'qr_flutter', 'Geolocator', 'PDF', 'Excel'],
     repo: 'https://github.com/msreaamparo-wq/TRACE-SSG-Attendance-System', repoLabel: 'View source',
     demo: null, accent: '#d89b3c',
     problem: 'Tracking and recording attendance at events.',
@@ -29,12 +27,12 @@ REA.projects = [
     id: 'cacao', index: '02', title: 'Cacao Vision', status: 'In Progress', statusKind: 'Status',
     short: 'Reading disease in cacao pods.',
     desc: 'Computer vision research focused on classifying Black Pod Rot severity in cacao pods using CNNs and Bayesian hyperparameter optimization.',
-    tech: ['Python', 'PyTorch', 'TensorFlow Lite', 'Flutter', 'Dart', 'Roboflow'],
-    repo: 'https://github.com/msreaamparo-wq', repoLabel: 'See GitHub profile',
+    tech: ['Python', 'Flutter', 'Dart', 'TensorFlow Lite', 'Roboflow'],
+    repo: 'https://github.com/msreaamparo-wq/cacao_severity_app', repoLabel: 'View app source',
     demo: null, accent: '#c4452d',
     problem: 'Classifying the severity of Black Pod Rot in cacao pods.',
     purpose: 'Research into whether convolutional neural networks, tuned with Bayesian hyperparameter optimization, can classify severity from images.',
-    build: ['CNN-based image classification', 'Bayesian hyperparameter optimization', 'Python with PyTorch', 'TensorFlow Lite as a deployment target'],
+    build: ['CNN-based image classification research', 'Bayesian hyperparameter optimization research', 'Flutter mobile app', 'TensorFlow Lite integration in progress'],
     current: 'In progress. The research and model are not complete, and no results are claimed on this site.',
     shots: []
   },
@@ -55,7 +53,7 @@ REA.projects = [
     id: 'archive', index: '04', title: 'Our Little Archive', status: 'Side project', statusKind: 'Type',
     short: 'A shared memory journal.',
     desc: 'A shared memory journal for photos, dates, notes, and meaningful places.',
-    tech: ['Flutter', 'Dart', 'Supabase', 'OpenStreetMap', 'flutter_map', 'Geolocation'],
+    tech: ['Flutter', 'Dart', 'Supabase', 'flutter_map', 'OpenStreetMap', 'Geolocator', 'latlong2'],
     repo: 'https://github.com/msreaamparo-wq/it-s-a-love-story-baby', repoLabel: 'View source',
     demo: null, accent: '#b9a98c',
     problem: 'Keeping shared memories in one place.',
@@ -66,7 +64,7 @@ REA.projects = [
   },
   {
     id: 'void', index: '05', title: 'Void Experience', status: 'Experiment', statusKind: 'Type',
-    short: 'A hacked screen that isn\u2019t.',
+    short: 'A hacked screen that isn’t.',
     desc: 'A browser-only simulated hacked-screen visual experiment. It does not access devices or user data.',
     tech: ['HTML', 'CSS', 'JavaScript'],
     repo: 'https://github.com/msreaamparo-wq/void-experience', repoLabel: 'View source',
@@ -85,22 +83,26 @@ REA.extraScreens = [
   { id: 'code', title: 'Code experiments', kind: 'code' }
 ];
 
-/* Expanded profile-wide toolkit. Project-specific libraries are also shown in each case study. */
+/* Technologies checked against project source files and dependency manifests. */
 REA.toolkit = [
   {
     name: 'Programming languages',
-    items: ['Python', 'Dart', 'JavaScript', 'HTML5', 'CSS3', 'Java', 'Kotlin', 'C#', 'PHP', 'TypeScript', 'SQL']
+    items: ['Python', 'Dart', 'JavaScript', 'HTML5', 'CSS3', 'SQL']
   },
   {
-    name: 'Web and interactive UI',
-    items: ['React', 'React DOM', 'Flask', 'Node.js', 'FastAPI', 'Vite', 'Tailwind CSS', 'Bootstrap', 'Three.js', 'React Three Fiber', 'GSAP', 'Framer Motion', 'Lucide React', 'PostCSS', 'Autoprefixer']
+    name: 'Web and interface development',
+    items: ['Flask', 'React', 'React DOM', 'Vite', 'Tailwind CSS', 'Three.js', 'React Three Fiber', 'GSAP', 'Framer Motion', 'Lucide React']
   },
   {
-    name: 'Mobile, backend and cloud',
-    items: ['Flutter', 'Provider', 'Firebase', 'Firebase Authentication', 'Cloud Firestore', 'Firebase Storage', 'Supabase', 'Supabase JS', 'Hive', 'REST APIs', 'GitHub REST API', 'OpenStreetMap', 'Geolocator', 'QR scanning', 'image_picker', 'mobile_scanner', 'qr_flutter', 'flutter_map', 'latlong2', 'tflite_flutter']
+    name: 'Mobile development',
+    items: ['Flutter', 'Provider', 'Hive', 'image_picker', 'tflite_flutter', 'mobile_scanner', 'qr_flutter', 'Geolocator', 'flutter_map', 'latlong2', 'fl_chart', 'flutter_svg']
   },
   {
-    name: 'AI, data and developer tools',
-    items: ['PyTorch', 'TensorFlow', 'TensorFlow Lite', 'scikit-learn', 'NumPy', 'pandas', 'CNNs', 'Bayesian HPO', 'Computer Vision', 'Roboflow', 'YOLO', 'Google Colab', 'python-docx', 'pypdf', 'pytest', 'Git', 'GitHub', 'VS Code', 'Android Studio', 'Android SDK', 'Figma', 'npm', 'GitHub Pages', 'Render', 'Vercel']
+    name: 'Backend, databases and services',
+    items: ['Firebase', 'Firebase Authentication', 'Cloud Firestore', 'Firebase Storage', 'Supabase', 'Supabase JS', 'Supabase Flutter', 'OpenStreetMap']
+  },
+  {
+    name: 'Python packages and developer tools',
+    items: ['python-docx', 'pypdf', 'pytest', 'Git', 'GitHub', 'VS Code', 'Android Studio', 'npm', 'Roboflow', 'GitHub Pages', 'Render', 'Vercel']
   }
 ];
