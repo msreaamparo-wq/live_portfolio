@@ -91,18 +91,18 @@ REA.toolkit = [
   },
   {
     name: 'Web and interface development',
-    items: ['Flask', 'React', 'React DOM', 'Vite', 'Tailwind CSS', 'Three.js', 'React Three Fiber', 'GSAP', 'Framer Motion', 'Lucide React']
+    items: ['Flask', 'React', 'React DOM', 'Vite', 'Tailwind CSS', 'Three.js', 'React Three Fiber', 'GSAP', 'Framer Motion', 'Lucide React', 'PostCSS', 'Autoprefixer']
   },
   {
-    name: 'Mobile development',
-    items: ['Flutter', 'Provider', 'Hive', 'image_picker', 'tflite_flutter', 'mobile_scanner', 'qr_flutter', 'Geolocator', 'flutter_map', 'latlong2', 'fl_chart', 'flutter_svg']
+    name: 'Flutter and mobile packages',
+    items: ['Flutter', 'Provider', 'Hive', 'Firebase Authentication', 'Cloud Firestore', 'Firebase Storage', 'Supabase Flutter', 'mobile_scanner', 'qr_flutter', 'Geolocator', 'image_picker', 'tflite_flutter', 'image', 'flutter_map', 'latlong2', 'fl_chart', 'pdf', 'printing', 'excel', 'file_picker', 'path_provider', 'http', 'share_plus', 'intl', 'flutter_svg', 'uuid', 'internet_connection_checker_plus']
   },
   {
-    name: 'Backend, databases and services',
-    items: ['Firebase', 'Firebase Authentication', 'Cloud Firestore', 'Firebase Storage', 'Supabase', 'Supabase JS', 'Supabase Flutter', 'OpenStreetMap']
+    name: 'Backend, databases and research tools',
+    items: ['Firebase', 'Supabase', 'Supabase JS', 'SQL', 'OpenStreetMap', 'Roboflow', 'python-docx', 'pypdf', 'pytest', 'ReportLab', 'Gunicorn']
   },
   {
-    name: 'Python packages and developer tools',
-    items: ['python-docx', 'pypdf', 'pytest', 'Git', 'GitHub', 'VS Code', 'Android Studio', 'npm', 'Roboflow', 'GitHub Pages', 'Render', 'Vercel']
+    name: 'Developer tools and deployment',
+    items: ['Git', 'GitHub', 'VS Code', 'Android Studio', 'Figma', 'npm', 'GitHub Pages', 'Render', 'Vercel']
   }
 ];
