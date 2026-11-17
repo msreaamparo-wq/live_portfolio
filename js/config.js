@@ -15,7 +15,7 @@ REA.projects = [
     id: 'trace', index: '01', title: 'TRACE', status: 'Prototype', statusKind: 'Status',
     short: 'Attendance, recorded properly.',
     desc: 'Tracking and recording attendance system with event management, QR-based attendance, role-based access, and location verification.',
-    tech: ['Flutter', 'Dart', 'Firebase'],
+    tech: ['Flutter', 'Dart', 'Firebase', 'Provider', 'Cloud Firestore', 'QR scanning', 'Geolocation', 'Hive', 'PDF / Excel reports'],
     repo: 'https://github.com/msreaamparo-wq/TRACE-SSG-Attendance-System', repoLabel: 'View source',
     demo: null, accent: '#d89b3c',
     problem: 'Tracking and recording attendance at events.',
@@ -28,7 +28,7 @@ REA.projects = [
     id: 'cacao', index: '02', title: 'Cacao Vision', status: 'In Progress', statusKind: 'Status',
     short: 'Reading disease in cacao pods.',
     desc: 'Computer vision research focused on classifying Black Pod Rot severity in cacao pods using CNNs and Bayesian hyperparameter optimization.',
-    tech: ['Python', 'PyTorch', 'TensorFlow Lite'],
+    tech: ['Python', 'PyTorch', 'TensorFlow Lite', 'Flutter', 'Dart', 'Roboflow'],
     repo: 'https://github.com/msreaamparo-wq', repoLabel: 'See GitHub profile',
     demo: null, accent: '#c4452d',
     problem: 'Classifying the severity of Black Pod Rot in cacao pods.',
@@ -41,7 +41,7 @@ REA.projects = [
     id: 'gnlr', index: '03', title: 'Gender-Neutral Language Recognizer', status: 'Language tool', statusKind: 'Type',
     short: 'Words, reconsidered.',
     desc: 'A Flask application that identifies gender-specific language and suggests more inclusive alternatives.',
-    tech: ['Python', 'Flask', 'HTML', 'CSS'],
+    tech: ['Python', 'Flask', 'HTML', 'CSS', 'Finite State Automata', 'python-docx', 'pypdf', 'pytest'],
     repo: 'https://github.com/msreaamparo-wq/Gender-Neutral-Language-Recognizer', repoLabel: 'View source',
     demo: null, accent: '#ece4d4',
     problem: 'Gender-specific wording in text.',
@@ -54,7 +54,7 @@ REA.projects = [
     id: 'archive', index: '04', title: 'Our Little Archive', status: 'Side project', statusKind: 'Type',
     short: 'A shared memory journal.',
     desc: 'A shared memory journal for photos, dates, notes, and meaningful places.',
-    tech: ['Flutter', 'Supabase', 'OpenStreetMap'],
+    tech: ['Flutter', 'Dart', 'Supabase', 'OpenStreetMap', 'flutter_map', 'Geolocation'],
     repo: 'https://github.com/msreaamparo-wq/it-s-a-love-story-baby', repoLabel: 'View source',
     demo: null, accent: '#b9a98c',
     problem: 'Keeping shared memories in one place.',
@@ -84,9 +84,22 @@ REA.extraScreens = [
   { id: 'code', title: 'Code experiments', kind: 'code' }
 ];
 
+/* Expanded profile-wide toolkit. Project-specific libraries are also shown in each case study. */
 REA.toolkit = [
-  { name: 'Languages', items: ['Python', 'Dart', 'JavaScript', 'HTML', 'CSS', 'Java', 'Kotlin', 'C#', 'PHP', 'TypeScript', 'SQL'] },
-  { name: 'App and web development', items: ['Flutter', 'Provider', 'Firebase', 'Flask', 'React', 'Node.js', 'FastAPI', 'Bootstrap', 'Tailwind CSS'] },
-  { name: 'Machine learning', items: ['PyTorch', 'TensorFlow', 'TensorFlow Lite', 'scikit-learn', 'NumPy', 'pandas', 'CNNs', 'Roboflow', 'YOLO'] },
-  { name: 'Development tools', items: ['Git', 'GitHub', 'VS Code', 'Android Studio', 'Figma', 'Google Colab', 'pytest'] }
+  {
+    name: 'Programming languages',
+    items: ['Python', 'Dart', 'JavaScript', 'HTML5', 'CSS3', 'Java', 'Kotlin', 'C#', 'PHP', 'TypeScript', 'SQL']
+  },
+  {
+    name: 'Web and interactive UI',
+    items: ['React', 'React DOM', 'Flask', 'Node.js', 'FastAPI', 'Vite', 'Tailwind CSS', 'Bootstrap', 'Three.js', 'React Three Fiber', 'GSAP', 'Framer Motion', 'Lucide React', 'PostCSS', 'Autoprefixer']
+  },
+  {
+    name: 'Mobile, backend and cloud',
+    items: ['Flutter', 'Provider', 'Firebase', 'Firebase Authentication', 'Cloud Firestore', 'Firebase Storage', 'Supabase', 'Supabase JS', 'Hive', 'REST APIs', 'GitHub REST API', 'OpenStreetMap', 'Geolocator', 'QR scanning', 'image_picker', 'mobile_scanner', 'qr_flutter', 'flutter_map', 'latlong2', 'tflite_flutter']
+  },
+  {
+    name: 'AI, data and developer tools',
+    items: ['PyTorch', 'TensorFlow', 'TensorFlow Lite', 'scikit-learn', 'NumPy', 'pandas', 'CNNs', 'Bayesian HPO', 'Computer Vision', 'Roboflow', 'YOLO', 'Google Colab', 'python-docx', 'pypdf', 'pytest', 'Git', 'GitHub', 'VS Code', 'Android Studio', 'Android SDK', 'Figma', 'npm', 'GitHub Pages', 'Render', 'Vercel']
+  }
 ];
