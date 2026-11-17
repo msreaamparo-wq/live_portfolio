@@ -28,7 +28,7 @@ REA.projects = [
     short: 'Reading disease in cacao pods.',
     desc: 'Computer vision research focused on classifying Black Pod Rot severity in cacao pods using CNNs and Bayesian hyperparameter optimization.',
     tech: ['Python', 'Flutter', 'Dart', 'TensorFlow Lite', 'Roboflow'],
-    repo: 'https://github.com/msreaamparo-wq/cacao_severity_app', repoLabel: 'View app source',
+    repo: 'https://github.com/msreaamparo-wq', repoLabel: 'See GitHub profile',
     demo: null, accent: '#c4452d',
     problem: 'Classifying the severity of Black Pod Rot in cacao pods.',
     purpose: 'Research into whether convolutional neural networks, tuned with Bayesian hyperparameter optimization, can classify severity from images.',
