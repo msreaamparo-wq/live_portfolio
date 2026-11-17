@@ -3,6 +3,7 @@ window.REA = window.REA || {};
 REA.config = {
   name: 'Rea Amparo',
   github: 'https://github.com/msreaamparo-wq',
+  githubProfileUrl: 'https://github.com/msreaamparo-wq',
   githubUser: 'msreaamparo-wq',
   /* No email address exists in the original project. Add yours here, e.g. 'you@example.com'.
      While empty, the email link is hidden instead of showing a fake address. */
